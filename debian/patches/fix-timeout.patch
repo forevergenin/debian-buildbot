@@ -1,0 +1,13 @@
+Index: debian-buildbot/buildbot/process/buildstep.py
+===================================================================
+--- debian-buildbot.orig/buildbot/process/buildstep.py	2012-11-30 14:58:42.604454874 +0530
++++ debian-buildbot/buildbot/process/buildstep.py	2012-11-30 15:01:01.268458708 +0530
+@@ -352,7 +352,7 @@
+ class RemoteShellCommand(RemoteCommand):
+     def __init__(self, workdir, command, env=None,
+                  want_stdout=1, want_stderr=1,
+-                 timeout=20*60, maxTime=None, logfiles={},
++                 timeout=180*60, maxTime=None, logfiles={},
+                  usePTY="slave-config", logEnviron=True,
+                  collectStdout=False, interruptSignal=None,
+                  initialStdin=None, decodeRC={0:SUCCESS}):

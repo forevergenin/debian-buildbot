@@ -1,3 +1,10 @@
+buildbot (0.8.7p1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added patch to fix git submodule checkout timeout
+
+ -- Premkumar Subramanian <premsubr@cisco.com>  Thu, 29 Nov 2012 12:39:33 +0530
+
 buildbot (0.8.7-1) unstable; urgency=low
 
   * New upstream release.
